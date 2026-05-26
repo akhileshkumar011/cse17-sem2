@@ -9,7 +9,7 @@ body {
     padding: 20px;
     background: rgb(252, 242, 235);
     border-radius: 10px;
-    box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 10px rgb(151, 151, 151);
 }
 input {
     padding: 8px;

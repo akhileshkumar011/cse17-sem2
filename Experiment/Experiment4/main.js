@@ -21,7 +21,7 @@ function calResult() {
     } else if (averageMarks >= 75) {
         grade = "B";
         result = "Pass";
-    } else if (averageMarks >= 50) {
+    } else if (averageMarks >= 49) {
         grade = "C";
         result = "Pass";
     } else {

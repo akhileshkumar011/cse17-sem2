@@ -11,7 +11,7 @@ const Student = (props) => {
                 <strong>Course:</strong> {props.course}
             </p>
             <p>
-                <strong>Marks:</strong> {props.marks}
+                <strong>Markss:</strong> {props.marks}
             </p>
         </div>
     );
