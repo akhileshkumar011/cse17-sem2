@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable DataTypes in JS</title>
+</head>
+<body>
+    <script>
+        var name = "Pushpendra";
+        console.log(name);
+        var num = "1234";
+        console.log(num);
+        var check = false;
+        console.log(check);
+        var number = null;
+        console.log(number);
+        var big_number = BigInt(1234567894561231547894564646);
+        console.log(big_number);
+        console.log(typeof big_number);
+        var a = Symbol("Name"); //==> Unique Single Value rkhne ke liye symbol
+        var b = "Name";
+        console.log(a ==b);
+        
+        //Obejct Creation
+        let myIntfo={
+            name :"Vansh" ,
+            age : "20", 
+            address : "Delhi", 
+            pgl : true, 
+            branch : "CSE", 
+            section : "23"
+        };
+        console.log(myIntfo); //Poori obejct ko print krane ke liye
+        console.log(myIntfo.address); //Jb kisi ek cheez ko print krana ho
+        var keys = Object.keys(myIntfo);
+        console.log(keys.length);
+        function cal(){
+            var num1 = 24;
+            var num2 = 45;
+            var add = num1+num2;
+            console.log("Addition of two numbers : "+add);
+        }
+        cal();
+        
+        //Array 
+        let student_list = ["Pushpendra", "Pooja", "Khushbu"];
+        console.log(student_list[2]);
+        let student_info = ["Pushpendra", 20, false,  "CSE23", null ];
+        console.log(student_info);
+        for(let i =0; i<student_info.length;i++)
+        {
+            console.log(student_info[i]);
+        }
+        for(let x in student_info)
+        {
+            console.log(student_info[x]);
+        }
+    </script>
+    
+</body>
+</html>

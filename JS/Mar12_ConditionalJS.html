@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditonals in JS</title>
+</head>
+<body>
+   <script>
+    //Conditional Statments in JS - Allows code to make decisions based on condition and return true or false.
+
+    //Age Validation
+    //if
+    let age = 26;
+    if(age>=18)
+   console.log(age+" is a Valid age for Voting.");
+   
+   //if else
+    else 
+    console.log(age+ "is not a valid age for voting.");
+
+    //switch case
+    let grade = 'A';
+    switch(grade)
+    {
+        case 'A' : result = "First Division";
+        break;
+        case 'B': result = "Second Division";
+        break;
+        case 'C': result = "Third Division";
+        break;
+        case 'D': result = "Fail";
+    break;    }
+    console.log(result);
+
+   //if else if nested 
+   let marks =25;
+   if(marks>=60)
+   console.log("First Grade");
+   else if(marks<60 && marks>=50)
+    console.log("Second Grade");
+   else if(marks<50 && marks >=40)
+   console.log("Third Grade");
+   else
+   console.log("Fail");
+   </script>
+</body>
+</html>

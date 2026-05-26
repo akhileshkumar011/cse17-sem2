@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JS</title>
+</head>
+<body>
+    <script>
+        //Normal Function without parameters...
+        function demo()
+        {
+          console.log("Hello JS");
+        }
+        demo(); // Function Calling
+        //With parameters...
+        function demo1(text)
+        {
+            console.log("Hello " + text);
+        }
+        demo1("React");
+        // Default parameters
+        function add(num1, num2 = 8)
+        {
+            console.log("Addition is : "+ (num1+num2));
+        }
+        add(7); //Jb Undefined milega kuch toh NaN output ayga (Not a Number), isiliye pehle sirf second number ko const bnate hai
+        //In JavaScript, synchronous functions run sequentially, blocking the main thread until completion, while asynchronous functions allow other code to run concurrently, without waiting for time-consuming operations to finish.
+        //Synchronous
+        function cal()
+        {
+            function add(a,b)
+            {
+                console.log("Addition is : "+(a+b));
+            }
+            function product(num1,num2)
+            {
+                console.log("Multiplication is : " +(num1*num2));
+            }
+            function sub(a,b)
+            {
+                console.log("Subtraction is : " +(a-b));
+            }
+            add(3,6);
+            product(2,4);
+            sub(7,5);
+        }
+        cal();
+
+        //Anonymous Function
+        let msg = function()
+        {
+            console.log("Pushpendra");
+        }
+        msg();
+        //Short code for above function i.e. Arrow Function (without parameter).
+        let msg1 = () => console.log("Victus");
+        msg1();
+
+        //Arrow Function using multiple lines.
+        let msg2=(a,b)=>{
+            var num1 = a;
+            var num2 = b;
+            var result = a/b;
+            console.log("Result is : "+ result);
+        }
+        msg2(1,2);
+
+        //IFFE Function
+        (function()
+    {
+        console.log("HI!");
+    }) ();
+
+    (msg3 => comsole.log("Hi?"))();
+
+    </script>
+    
+</body>
+</html>

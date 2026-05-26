@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object in JS</title>
+</head>
+<body>
+    <script>
+        //Object Creation
+        let student = {name : "Pushpendra",
+            age: 20,
+            isMarried : false,
+            addresss : {
+                street: "sector -d",
+                area : "PD Nagar",
+                pincode : 209801,
+                city : "Unnao"
+            },
+            education : ["10th", "12th", "B. Tech"],
+            degree : "Btech",
+            branch : "CSE",
+            year : 2026,
+            getInfo:function()
+            {
+                return "My current Education is : " + student.degree;
+            }  
+        };
+        //Accessing Object
+        console.log(student);
+        console.log(typeof student);
+        console.log(student.getInfo); //Accessing a Particular Value or Function within Object
+        console.log(student.education[2]);
+
+        //Find Keys in Object
+        console.log("name" in student);
+
+        //Delete Keys from Object
+        console.log(delete student.name);
+        console.log(student);  
+
+        //Find length of Object
+        let keyslength = Object.keys(student);
+        console.log(keyslength);
+        let length = Object.keys(student.education);
+
+        //Iteration
+        // for(let i =0;i<keyslength.length; i++)
+        // {
+        //     console.log(student[keyslength[i] ]);
+        // }
+        for(let i in student)
+        {
+            console.log(student[i]);
+        }
+
+        //Create Object using new KeyWord
+        let myInfo = new Object();
+        myInfo.name = "Pushpa";
+        myInfo.age = "20";
+        myInfo.address = "Noida";
+        myInfo.mobile = "*****";
+        myInfo.married = false;
+        console.log(myInfo.name);   // Using Dot Notation
+        console.log(myInfo['address']); //Without using Dot Notation
+    </script>
+    
+</body>
+</html>
